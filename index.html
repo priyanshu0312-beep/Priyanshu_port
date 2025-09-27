@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
+  <title>Portfolio Website</title>
   <!-- #CSS -->
   <link rel="stylesheet" href="style.css" />
   <!-- #box icon -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
-  <!--remix icon-->
+  <!-- remix icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -21,74 +21,60 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#Achievements">Achievements</a></li>
-    <li><a href="#education">education</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#Skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><button id="theme-toggle">🌙 Theme</button></li>
+    <li><a href="javascript:void(0)" onclick="showAdminLogin()">Admin</a></li>
   </ul>
-  <!-- <div class="top-btnn">
-    <a href="#" class="h-btn">Contact me</a>
-  </div> -->
 </header>
 
+<!-- ===== Hero Section ===== -->
 <section class="hero" id="home">
   <div class="main-content" data-aos="fade-in">
     <h4>Hi, There</h4>
     <h1>I'm <span>Priyanshu</span></h1>
-    <p>I am a dedicated frontend developer with a passion for creating visually compelling and highly interactive web experiences.
-       With a strong foundation in HTML, css, and javascript, I bring design concepts to life, ensuring that each project is not only aesthetically pleasing 
-      but also intuitive and accessible for all users .</p>
+    <p>I am a dedicated frontend developer with a passion for creating visually compelling and highly interactive web experiences.</p>
 
     <div class="social">
       <a href="https://www.facebook.com/profile.php?id=100069135469820/" target="_blank"><i class="ri-facebook-fill"></i></a> 
-      <a href="https://www.instagram.com/orewa_anshu/?next=%2F" target="_blank"><i class="ri-instagram-fill"></i></a>
-      <a href="https://x.com/Priyans48530245"><i class="ri-twitter-fill"></i></a>
+      <a href="https://www.instagram.com/orewa_anshu/" target="_blank"><i class="ri-instagram-fill"></i></a>
+      <a href="https://x.com/Priyans48530245" target="_blank"><i class="ri-twitter-fill"></i></a>
       <a href="https://www.linkedin.com/in/priyanshu-pratyush-paikaray-4011811b4/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-
     </div>
+
     <div class="main-btn">
-     
-     <a href="assets/resume_Anshu.pdf" download="resume_Anshu.pdf" class="btn btn2">Download CV</a>
-
+      <a href="assets/resume_Anshu.pdf" download="resume_Anshu.pdf" class="btn btn2">Download CV</a>
     </div>
-    
   </div>
-   <div class="hero-right">
+  <div class="hero-right">
     <img src="assets/anshusmile.png" alt="Anshu" />
   </div>
-  
 </section>
 
+<!-- ===== About Section ===== -->
 <section class="about" id="about">
   <div class="about-img" data-aos="zoom-in-down">
     <img src="assets/Priyanshu.png" />
   </div>
   <div class="about-text" data-aos="zoom-in-up">
-    <h2>I am <span>frontend</span><br />Developer</h2>
-    <div class="exp-area">
-      <p class="exp">Experience <span>Fresher </span></p>
-      <p class="exp">Speciality: <span> Developer</span></p>
-      <p class="exp">Address: <span>Khordha, Odisha, India</span></p>
-      <p class="exp">Email: <span>priyanshupratyush0@gmail.com</span></p>
-      <p class="exp">Phone: <span>7848886197</span></p>
-      <p class="exp">Freelance: <span>available</span></p>
-   
+    <h2>I am <span>Frontend</span> Developer</h2>
+    <p class="exp">Experience: <span>Fresher</span></p>
+    <p class="exp">Email: <span>priyanshupratyush0@gmail.com</span></p>
+    <p class="exp">Phone: <span>7848886197</span></p>
+  </div>
 </section>
 
+<!-- ===== Achievements Section ===== -->
 <section class="Achievements" id="Achievements">
   <div class="center-text" data-aos="fade-down">
     <h2>My <span>Achievements</span></h2>
   </div>
   <div class="Achievements-content" data-aos="zoom-in-up">
-   <!--- <div class="box">
-      <img src="assets/FullStack_java.jpg" alt="" />
-      <h3>FullStack Java</h3>
-      
-      <a href="assets/FullStack_java.jpg" target="_blank">View <i class="ri-arrow-right-line"></i></a>
-    </div>-->
     <div class="box">
       <img src="assets/Internship.jpg" alt="" />
       <h3>Internship FullStack Web Development</h3>
-      <a href="assets/Internship.jpg" target="_blank">View<i class="ri-arrow-right-line"></i></a>
+      <a href="assets/Internship.jpg" target="_blank">View <i class="ri-arrow-right-line"></i></a>
     </div>
     <div class="box">
       <img src="assets/fullStack_Web_Development .jpg" alt="" />
@@ -97,104 +83,77 @@
     </div>
     <div class="box">
       <img src="assets/aiml.jpg" alt="" />
-      <h3>Internship AI/ML </h3>
-      <a href="assets/aiml.jpg" target="_blank">View<i class="ri-arrow-right-line"></i></a>
-  </div> 
+      <h3>Internship AI/ML</h3>
+      <a href="assets/aiml.jpg" target="_blank">View <i class="ri-arrow-right-line"></i></a>
+    </div>
   </div>
 </section>
 
+<!-- ===== Education Section ===== -->
 <section class="education" id="education">
   <div class="center-text" data-aos="fade-down">
     <h2>My <span>Education</span></h2>
   </div>
-
   <div class="timeline" data-aos="zoom-in-up">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>MCA</h3>
-        <p>Trident Academy of Creative Technology (TACT), Bhubaneswar  </p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>B.Sc</h3>
-        <p>Utkal University, Odisha</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>+2 Science</h3>
-        <p>Prananath H S School,Khurdha</p>
-      </div>
-    </div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>MCA</h3><p>Trident Academy of Creative Technology (TACT), Bhubaneswar</p></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>B.Sc</h3><p>Utkal University, Odisha</p></div></div>
+    <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>+2 Science</h3><p>Prananath H S School, Khurdha</p></div></div>
   </div>
 </section>
 
-
+<!-- ===== Skills Section ===== -->
 <section class="Skills" id="Skills">
- <div class="center-text" data-aos="fade-down">
-    <h2>My <span>Skills</span></h2>
+  <div class="center-text" data-aos="fade-down"><h2>My <span>Skills</span></h2></div>
+  <div class="skills-content" data-aos="zoom-in-up">
+    <div class="skill-box"><i class="ri-html5-line skill-icon"></i><h3>HTML5</h3></div>
+    <div class="skill-box"><i class="ri-css3-line skill-icon"></i><h3>CSS3</h3></div>
+    <div class="skill-box"><i class="ri-javascript-line skill-icon"></i><h3>JavaScript</h3></div>
+    <div class="skill-box"><i class="ri-code-line skill-icon"></i><h3>Python</h3></div>
   </div>
-<div class="skills-content" data-aos="zoom-in-up">
-  <div class="skill-box">
-    <i class="ri-html5-line skill-icon"></i>
-    <h3>HTML5</h3>
-    <p>Semantic structure, accessibility, SEO-friendly markup</p>
-  </div>
-  <div class="skill-box">
-    <i class="ri-css3-line skill-icon"></i>
-    <h3>CSS3</h3>
-    <p>Flexbox, Grid, Animations, Responsive Design</p>
-  </div>
-  <div class="skill-box">
-    <i class="ri-javascript-line skill-icon"></i>
-    <h3>JavaScript</h3>
-    <p>DOM manipulation, ES6, event handling, form validation</p>
-  </div>
-  <div class="skill-box">
-    <i class="ri-code-line skill-icon"></i>
-    <h3>Python</h3>
-    <p>Basic scripting, logic building, and automation with Python</p>
-  </div>
-</div>
 </section>
 
-
+<!-- ===== Contact Section ===== -->
 <section class="contact" id="contact">
   <div class="center-text" data-aos="fade-down">
-    <h2>Contact<span>me</span></h2>
+    <h2>Contact <span>Me</span></h2>
   </div>
   <div class="contact-form" data-aos="zoom-in">
-    <form action="">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Email Address..." required />
-      <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="Email Address..." required />
+      <textarea id="message" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
       <input type="submit" value="Send Message" class="send-btn" />
     </form>
   </div>
 </section>
 
+<!-- ===== Admin Login Section ===== -->
+<section id="admin-login-form" style="display:none;">
+  <h2>Admin Login</h2>
+  <form>
+    <input type="text" id="admin-username" placeholder="Username" required />
+    <input type="password" id="admin-password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+</section>
+
+<!-- ===== Admin Dashboard Section ===== -->
+<section id="admin-section" style="display:none;">
+  <h2>Admin Dashboard</h2>
+  <div id="user-messages"></div>
+</section>
+
+<!-- ===== Footer ===== -->
 <div class="footer">
-  <div>
-    <p> Have a nice day</p>
-  </div>
-  <a href="#home" class="scroll-top">
-    <i class="ri-arrow-up-s-fill"></i>
-  </a>
+  <p>Have a nice day</p>
+  <a href="#home" class="scroll-top"><i class="ri-arrow-up-s-fill"></i></a>
 </div>
 
+<!-- ===== Scripts ===== -->
 <script src="./script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    offset: 300,
-    duration: 1400,
-  });
+  AOS.init({ offset: 300, duration: 1400 });
 </script>
 
 </body>
